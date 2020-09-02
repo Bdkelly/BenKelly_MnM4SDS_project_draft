@@ -1,1 +1,5 @@
-# BenKelly_MnM4SDS_project
+Project Name:
+Solar Farm Finder
+
+Idea:
+identify areas with large amounts of sunlight through out the day
