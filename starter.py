@@ -3,15 +3,10 @@ import numpy
 import time
 
 def main(tracker,video,num=1):
-    ret, frame = video.read()
-    trackerlst = []
-    for i in range(num):
-        rec = cv2.selectROI("MultiTracker",frame)
-        trackerlst.append(rec)
     while (video.isOpened()):
         ret, frame = video.read()
-        for i in trackerlst:
-            tracker.init(frame,i)
+        rec = cv2.selectROI("MultiTracker",frame)
+        tracker.init(frame,rec)
         if not ret:
             break
         (success,box) = tracker.update(frame)
