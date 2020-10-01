@@ -1,5 +1,3 @@
-Project Name:
-Solar Farm Finder
+Soccer Player Tracking:
 
-Idea:
-identify areas with large amounts of sunlight through out the year
+For Birds Eye Projection
